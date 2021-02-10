@@ -1,0 +1,17 @@
+spring:
+  mvc:
+    favicon:
+      enabled: false
+  banner:
+    location: banner.txt
+  application:
+    name: maven-clinic-austinpilz-interview
+
+management:
+  endpoint:
+    heapdump:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: ["health", "info", "heapdump", "threaddump"]
